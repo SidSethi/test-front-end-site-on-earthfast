@@ -2370,12 +2370,12 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
     }
 
     const scope = self;
-    const envContentNodes = "content18.usw2.testnet-sepolia.armadanodes.com";
+    const envContentNodes = "";
     const contentNodes = (envContentNodes.trim() !== '') ? envContentNodes.trim().split(',') : [];
     const envBootstrapNodes = "";
     const bootstrapNodes = (envBootstrapNodes.trim() !== '') ? envBootstrapNodes.trim().split(',') : [];
     const contentNodeRefreshIntervalMs = Number(3600000);
-    const projectId = "0x128667f541fed74a8429f9d592c26c2c6a4beb9ae5ead9912c98b2595c842310";
+    const projectId = "";
     const adapter = new Adapter(scope.registration.scope, self.caches);
     const apiClient = new ArmadaAPIClientImpl(adapter, scope, location.protocol, projectId);
     let registry;
