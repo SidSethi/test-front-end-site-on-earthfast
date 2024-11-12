@@ -2375,7 +2375,7 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
     const envBootstrapNodes = "";
     const bootstrapNodes = (envBootstrapNodes.trim() !== '') ? envBootstrapNodes.trim().split(',') : [];
     const contentNodeRefreshIntervalMs = Number(3600000);
-    const projectId = "";
+    const projectId = "0xe6cf0296744f8c0361af0fcc9538d66f2b4b6eb7d446a5b91c89ffd961b14c98";
     const adapter = new Adapter(scope.registration.scope, self.caches);
     const apiClient = new ArmadaAPIClientImpl(adapter, scope, location.protocol, projectId);
     let registry;
